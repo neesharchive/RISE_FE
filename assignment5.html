@@ -1,0 +1,122 @@
+<!-- Assignment 5 - 
+ create form with all the form tags proper divisions and label.
+ use fieldsets, image tag, and all the phrase and formatting tags...  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign5</title>
+    <style>
+        #personalinfo {
+            background-color: antiquewhite;
+        }
+
+        .infield {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+        alt="Image of a lake" height="800" , width="1250">
+
+    <div>
+        <Fieldset id="personalinfo">
+            <legend>
+                <h1>Personal Info</h1>
+            </legend>
+            <fieldset class="infield">
+                <legend>
+                    <h2>Mandatory Fields</h2>
+                </legend>
+                <div>
+                    <form action="" method="post">
+                        <div>
+                            <label>Name:</label>
+                            <input type="text" name="name" id="name" required><br>
+                        </div>
+                        <div>
+                            <label>Email:</label>
+                            <input type="email" name="email" id="email" placeholder="example@example.com"><br>
+                        </div>
+                        <div>
+                            <label>Phone:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="123-45-678"><br>
+                        </div>
+                        <input type="submit" value="Enter">
+                </div>
+    </fieldset>
+    <fieldset class="infield">
+        <legend>
+            <h2>Optional</h2>
+        </legend>
+        <div>
+            <label>City:</label>
+            <input type="text" name="address" id="address"><br>
+        </div>
+        <div>
+            <label>Favorite Color</label>
+            <input type="color" name="favcolor" id="favcolor"><br>
+        </div>
+        <div>
+            <label>YOE:</label>
+            <input type="range" name="amountRange" min="0" max="40" value="0" oninput="this.form.amountInput.value=this.value" />
+            <input type="number" name="amountInput" min="0" max="40" value="0" oninput="this.form.amountRange.value=this.value" />
+        </div>
+        <div>
+            <label>Profile Pic</label>
+            <input type="file" name="profilepic" id="profilepic"><br>
+        </div>
+        <div>
+            <label>DOB:</label>
+            <input type="datetime-local" name="dob" id="dob"><br><br>
+        </div>
+        <div>
+            <label >Gender:</label><br>
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <input type="radio" name="gender">
+        </div>
+        
+        <div>
+            <label>Specializaiton</label>
+            <select name="Specializaiton">
+                <option value="Select">Select</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Database">Database</option>
+                <option value="Cloud">Cloud</option>
+            </select>
+        </div>
+
+    </fieldset>
+    </fieldset>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div><p>Lorem <b>ipsum dolor, sit amet consectetur adipisicing elit. Sunt alias cupiditate reprehenderit veniam
+            aspernatur distinctio. Et autem a,</b> dignissimos eum corrupti quia placeat voluptatibus explicabo optio
+            provident, labore dolores voluptas nisi ad <del>facilis! </del><ins>Quibusdam</ins> est, id numquam maiores fugiat optio
+            laboriosam eum itaque, totam in molestiae eaque, earum accusamus reprehenderit?</p></div>
+        <div><p>
+            Lorem ipsum dolor sit <small>amet, consectetur</small> adipisicing elit. Totam quaerat suscipit, repudiandae officia neque
+            commodi corrupti exercitationem placeat pariatur dolorum optio delectus error a impedit explicabo adipisci
+            sed. Itaque <strong>vero perspiciatis voluptates animi cum fugiat reiciendis! Mollitia accusamus pariatur iste ipsam
+            ut ipsa aliquid eos odit dolorum numquam nam</strong> excepturi corporis fugiat quibusdam enim vero laboriosam maxime
+            maiores, quam molestias quo hic! Sunt doloribus inventore aspernatur quibusdam sed nulla, dolorum excepturi,
+            quaerat aperiam <mark style="background-color:chartreuse;">reprehenderit, enim a cupiditate adipisci </mark>saepe at sint deleniti repudiandae officia
+            placeat! In <sup>doloribus<sub> id <sup>hello</sup>accusamus</sub> ipsum </sub></sup>magni blanditiis nulla architecto soluta deleniti, dolor amet alias
+            sapiente!</p>
+        </div>
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW94cXA1emNkbTNqemR1M2UwMWhrdTh0b2I0N3JyOHVuaHlqNnQ2aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2K5jinAlChoCLS/giphy.gif"
+            alt="">
+
+    </div>
+</body>
+
+</html>
