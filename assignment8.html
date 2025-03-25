@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign8</title>
+    <style>
+        #img{
+            background-image: url("https://pics.freeartbackgrounds.com/Beautiful_Sunset_Background-1366.jpg");
+            /* fit the image */
+            background-size: cover;
+            height: 300px;
+            width: 500px;
+        }
+        #box{
+            background-color: rgba(25, 132, 138, 0.911);
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            /* position it behind #img */
+            z-index: -1;
+            margin-left: 65px;
+            margin-top: -240px;
+        }
+        #text{
+            color: white;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Assignment 8</h2>
+    </div>
+    <div id="img">
+    </div>
+    <div id="box">
+        <div id="text">
+            <h2>This is a layered div...</h2>
+        </div>
+    </div>
+</body>
+</html>
